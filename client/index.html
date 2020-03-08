@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shop</title>
+	<link rel="stylesheet" href="/public/css/uikit.min.css">
+</head>
+<body>
+	
+<div id="app" class="uk-container">
+	<nav class="uk-navbar-container" uk-navbar>
+	    <div class="uk-navbar-left">
+	        <ul class="uk-navbar-nav">
+	            <li v-for="item in nav">
+	            	<router-link :to="item.href">{{ item.caption }}</router-link>
+	            </li>
+	        </ul>
+	    </div>
+	</nav>
+	<router-view></router-view>
+</div>
+
+<script src="/public/js/uikit.min.js"></script>
+<script src="/public/js/vue.min.js"></script>
+<script src="/public/js/vue-router.min.js"></script>
+<script src="/modules/main.js" type="module"></script>
+</body>
+</html>
