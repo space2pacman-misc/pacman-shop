@@ -1,7 +1,5 @@
 module.exports = {
-	home: {
-		get(request, response) {
-			response.send("Work");
-		}
-	}
+	products: require("./products"),
+	main: require("./main"),
+	all: require("./all")
 }

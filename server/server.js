@@ -7,6 +7,13 @@ var app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded());
 
-app.listen(7777)
+app.get("/products", routes.products.get);
+app.get("/products/:id", routes.products.id.get);
+app.get("/", routes.main.get);
+app.get("*", routes.all.get);
 
-app.get("/", routes.home.get);
+app.listen(8080, onListen);
+
+function onListen() {
+	console.log(`Server is running on port ${this.address().port}`);
+}

@@ -1,6 +1,15 @@
 export default Vue.component("Products", {
-	template: "<div>Products</div>",
+	template: "<div>Products: {{ products }}</div>",
+	data() {
+		return {
+			products: null
+		}
+	},
 	mounted() {
-		console.log("Product mounted")
+		this.$store.subscribe(mutation => {
+			if(mutation.type === "products") {
+				this.products = mutation.payload;
+			}
+		})
 	}
 })

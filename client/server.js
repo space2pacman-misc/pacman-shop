@@ -2,7 +2,7 @@ var http = require("http");
 var fs = require("fs");
 var server = http.createServer(onRequest);
 
-server.listen(7777);
+server.listen(80, onListen);
 
 function onRequest(request, response) {
 	var pathname = request.url;
@@ -28,4 +28,8 @@ function onRequest(request, response) {
 	}
 
 	response.end();
+}
+
+function onListen() {
+	console.log(`Server is running on port ${this.address().port}`);
 }

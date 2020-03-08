@@ -1,10 +1,10 @@
-import Home from "./components/Home.js";
+import Main from "./components/Main.js";
 import Products from "./components/Products.js";
 
 var routes =  [
 	{
 		path: "/",
-		component: Home
+		component: Main
 	},
 	{
 		path: "/products",
@@ -13,6 +13,5 @@ var routes =  [
 ]
 
 export default new VueRouter({ 
-	routes,
-	mode: "history"
+	routes
 })
