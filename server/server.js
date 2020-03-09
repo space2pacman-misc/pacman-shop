@@ -4,11 +4,12 @@ var bodyParser = require("body-parser");
 var routes = require("./routes");
 var app = express();
 
+app.use("/public", express.static("public"));
 app.use(cors());
 app.use(bodyParser.urlencoded());
 
 app.get("/products", routes.products.get);
-app.get("/products/:id", routes.products.id.get);
+app.get("/product/:id", routes.products.id.get);
 app.get("/", routes.main.get);
 app.get("*", routes.all.get);
 

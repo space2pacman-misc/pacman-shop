@@ -1,8 +1,8 @@
 export default Vue.component("Products", {
-	template: "<div>Products: {{ products }}</div>",
+	template: "#products",
 	data() {
 		return {
-			products: null
+			products: {}
 		}
 	},
 	mounted() {

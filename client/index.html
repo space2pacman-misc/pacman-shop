@@ -20,6 +20,28 @@
 	<router-view></router-view>
 </div>
 
+<template id="products">
+	<div class="uk-margin-remove" uk-grid>
+		<div v-for="product in products" class="uk-card uk-card-default uk-card-body uk-width-1-5 uk-text-center">
+	   		<h3 class="uk-card-title uk-text-left">
+	   			<router-link :to="'/product/' + product.id">{{ product.caption }}</router-link>	
+	   		</h3>
+	    	<img :src="$root.host + product.image" width="100px" class="uk-margin-top uk-margin-bottom" />
+	    	<div class="uk-text-lead">{{ product.price }} P</div>
+	    	<button class="uk-button uk-button-primary">Buy</button>
+		</div>
+	</div>
+</template>
+
+<template id="product">
+	<div class="uk-card uk-card-default uk-card-body uk-text-center">
+	   	<h3 class="uk-card-title uk-text-left">{{ product.caption }}</h3>
+	    <img :src="$root.host + product.image" width="100px" class="uk-margin-top uk-margin-bottom" />
+	    <div class="uk-text-lead">{{ product.price }} P</div>
+	    <button class="uk-button uk-button-primary">Buy</button>
+	</div>
+</template>
+
 <script src="/public/js/uikit.min.js"></script>
 <script src="/public/js/vue.min.js"></script>
 <script src="/public/js/vue-router.min.js"></script>

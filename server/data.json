@@ -1,0 +1,25 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"caption": "iPhone",
+			"price": 80000,
+			"description": "With the Apple iPhone 7 Plus, all critical aspects of the iPhone are greatly improved. This is a fundamentally new camera system for photo and video shooting. The most powerful and economical battery. Stereo speakers with rich sound. The brightest and most colorful of all iPhone displays. Protection against splashes and water. And its external data is no less impressive than its internal capabilities. All this is iPhone 7 Plus.",
+			"image": "/public/products/iphone.png"
+		},
+		{
+			"id": 2,
+			"caption": "LG",
+			"price": 20000,
+			"description": "With the Apple iPhone 7 Plus, all critical aspects of the iPhone are greatly improved. This is a fundamentally new camera system for photo and video shooting. The most powerful and economical battery. Stereo speakers with rich sound. The brightest and most colorful of all iPhone displays. Protection against splashes and water. And its external data is no less impressive than its internal capabilities. All this is iPhone 7 Plus.",
+			"image": "/public/products/lg.png"
+		},
+		{
+			"id": 3,
+			"caption": "Samsung",
+			"price": 40000,
+			"description": "With the Apple iPhone 7 Plus, all critical aspects of the iPhone are greatly improved. This is a fundamentally new camera system for photo and video shooting. The most powerful and economical battery. Stereo speakers with rich sound. The brightest and most colorful of all iPhone displays. Protection against splashes and water. And its external data is no less impressive than its internal capabilities. All this is iPhone 7 Plus.",
+			"image": "/public/products/samsung.png"
+		}
+	]
+}
